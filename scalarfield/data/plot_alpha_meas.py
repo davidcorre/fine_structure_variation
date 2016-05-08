@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 import numpy as np
-import matplotlib.pyplot as pl
+import matplotlib.pyplot as plt
 
 filename_VLT = 'alpha_UVES.txt'
 filename_KECK='alpha_keck.txt'
@@ -24,8 +24,7 @@ z_small =data_small['Redshift']
 alpha_small = data_small['alpha_var_ppm']*0.1
 error_small =data_small['error']*0.1
 
-pl.clf()
-fig, axis = pl.subplots(2, 3, sharex=True, figsize=(15, 10))
+fig, axis = plt.subplots(2, 3, sharex=True, figsize=(15, 10))
 
 #KECK
 axis[0,0].errorbar(z_keck,alpha_keck,error_keck,fmt='r.', markersize=3)

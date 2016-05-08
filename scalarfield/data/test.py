@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 import numpy as np
-import matplotlib.pyplot as pl
+import matplotlib.pyplot as plt
 
 filename='BAO_farook_rep.txt'
 BAO_data = np.genfromtxt('%s' % filename, dtype=float, delimiter=' ',names=True)
@@ -20,25 +20,25 @@ ini = []
 #z=np.linspace(0.,10.,1000)
 
 
-#pl.plot(z,power_law,'r',label='exp')
-pl.figure(1)
-pl.errorbar(z,H_comov,H_comov_err,fmt='b.', markersize=3,label='iii')
+#plt.plot(z,power_law,'r',label='exp')
+plt.figure(1)
+plt.errorbar(z,H_comov,H_comov_err,fmt='b.', markersize=3,label='iii')
 
-pl.xlabel('$z$')
-pl.ylabel('$H(z)/(1+z)$')
-#pl.ylim([-1.5, 1])
-pl.legend()
-#pl.title("Espresso / ideal case / QSO only")
-#pl.savefig("espresso_qso_ideal.png")
-pl.show()
+plt.xlabel('$z$')
+plt.ylabel('$H(z)/(1+z)$')
+#plt.ylim([-1.5, 1])
+plt.legend()
+#plt.title("Espresso / ideal case / QSO only")
+#plt.savefig("espresso_qso_ideal.png")
+plt.show()
 
-pl.figure(2)
-pl.errorbar(z,H,H_error,fmt='b.', markersize=3,label='iii')
-pl.xlabel('$z$')
-pl.ylabel('$H(z)$')
-#pl.ylim([-1.5, 1])
-pl.legend()
-#pl.title("Espresso / ideal case / QSO only")
-#pl.savefig("espresso_qso_ideal.png")
-pl.show()
+plt.figure(2)
+plt.errorbar(z,H,H_error,fmt='b.', markersize=3,label='iii')
+plt.xlabel('$z$')
+plt.ylabel('$H(z)$')
+#plt.ylim([-1.5, 1])
+plt.legend()
+#plt.title("Espresso / ideal case / QSO only")
+#plt.savefig("espresso_qso_ideal.png")
+plt.show()
 
