@@ -1,16 +1,20 @@
-Installation (tested only on Ubuntu 14.04 LTS)
+Installation 
 ============
+(tested only on Ubuntu 14.04 LTS)
 
-# Install Anaconda
-# Very practical to build a python environment (Either Python 2.7 or 3.5)
-# In my opinion it is better to install anaconda for 3.5 version as you can 
-# specify which version of python you want to use.
+Install Anaconda
+----------------
+Very practical to build a python environment (Either Python 2.7 or 3.5)
+In my opinion it is better to install anaconda for 3.5 version as you can 
+specify which version of python you want to use.
 https://www.continuum.io/downloads
 
-# Create an environment to use python 2.7 and its dependencies
-conda create -n py27 python=2.7 anaconda
+Create an environment to use python 2.7 and its dependencies
 
-# So now every time you want to use these libraries just write in a terminal
+::
+    conda create -n py27 python=2.7 anaconda
+
+So now every time you want to use these libraries just write in a terminal
 source activate py27
 # To use your normal path again just write 
 source deactivate
