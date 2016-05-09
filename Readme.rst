@@ -3,11 +3,10 @@ Installation
 (tested only on Ubuntu 14.04 LTS)
 
 Install Anaconda
-++++++++++++++++
-Very practical to build a python environment (Either Python 2.7 or 3.5)
-In my opinion it is better to install anaconda for 3.5 version as you can 
-specify which version of python you want to use.
-https://www.continuum.io/downloads
+-----------------
+Very practical to build a python environment (either Python 2 or 3)
+Install the version for python 3 as you can specify which version of python you want to use.
+Download it here: https://www.continuum.io/downloads
 
 Create an environment to use python 2.7 and its dependencies
 
@@ -16,15 +15,31 @@ Create an environment to use python 2.7 and its dependencies
     conda create -n py27 python=2.7 anaconda
 
 So now every time you want to use these libraries just write in a terminal
-source activate py27
-# To use your normal path again just write 
-source deactivate
+::
 
-#Install emcee (MCMC sampler)
-conda install -n py27 --channel https://conda.anaconda.org/OpenAstronomy emcee
+    source activate py27
 
-#Install corner plot
-pip install corner
+To use your normal path again just write 
+::
+
+    source deactivate
+
+Install emcee (MCMC sampler) in this environnement only:
+::
+ 
+    conda install -n py27 --channel https://conda.anaconda.org/OpenAstronomy emcee
+
+or if you want to install it 
+::
+    
+    pip install emcee
+
+For more infos about it see: https://github.com/dfm/emcee
+
+Install corner plot
+::
+
+    pip install corner
 
 
 
