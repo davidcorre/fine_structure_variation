@@ -45,3 +45,7 @@ just type in a terminal
     pip install corner
 
 About the "sigmas" used in this cornet plot: see the documentation here: https://github.com/dfm/corner.py
+
+- Scalar field
+The scalar fields are computed using the ScalPy code: https://github.com/sum33it/scalpy
+Here you just find the scalar.py from these code as it does not need more and it is modified to include alpha variations. 
