@@ -44,6 +44,4 @@ just type in a terminal
 
     pip install corner
 
-    - A note about the "sigmas" used in this cornet plot
-
-See the documentation here: https://github.com/dfm/corner.py
+About the "sigmas" used in this cornet plot: see the documentation here: https://github.com/dfm/corner.py
