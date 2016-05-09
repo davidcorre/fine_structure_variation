@@ -3,7 +3,7 @@ Installation
 (tested only on Ubuntu 14.04 LTS)
 
 Install Anaconda
-----------------
+++++++++++++++++
 Very practical to build a python environment (Either Python 2.7 or 3.5)
 In my opinion it is better to install anaconda for 3.5 version as you can 
 specify which version of python you want to use.
