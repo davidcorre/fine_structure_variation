@@ -12,6 +12,7 @@ https://www.continuum.io/downloads
 Create an environment to use python 2.7 and its dependencies
 
 ::
+
     conda create -n py27 python=2.7 anaconda
 
 So now every time you want to use these libraries just write in a terminal
