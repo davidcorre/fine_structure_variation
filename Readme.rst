@@ -4,8 +4,10 @@ Installation
 
 - Install Anaconda
 
-Very practical to build a python environment (either Python 2 or 3)
+Very practical to build a python environment (either Python 2 or 3) 
+
 Install the version for python 3 as you can specify which version of python you want to use.
+
 Download it here: https://www.continuum.io/downloads
 
 Create an environment to use python 2.7 and its dependencies
